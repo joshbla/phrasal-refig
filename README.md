@@ -1,3 +1,3 @@
 # phrasal-refig
  
-test
+Inspiration taken from Mad Libs and the Twitch buttsbot
