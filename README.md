@@ -23,7 +23,7 @@ This package has these core dependencies:
 # Development Roadmap
 
 <p align="justify">
-If you would like to contribute to the <strong>phrasal-refig</strong> project please read the <a href="google.com" target="_blank">contributing guidelines</a>.
+If you would like to contribute to the <strong>phrasal-refig</strong> project please read the <a href="https://www.google.com" target="_blank">contributing guidelines</a>.
    
 Items currently under development:
    - Expanding and refining the parts-of-speech/lexical items/word classes
@@ -45,5 +45,5 @@ The MIT License (MIT).
 # Author
 
 <p align="justify">
-  Copyright (c) 2022 Joshua Blake Smith
+Copyright (c) 2022 Joshua Blake Smith
 </p>
