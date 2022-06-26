@@ -1,6 +1,6 @@
 # phrasal-refig
  
-<p align="center">
+<p align="justify">
 Inspiration taken from Mad Libs and buttsbot on Twitch
 </p>
 
