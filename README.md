@@ -18,6 +18,7 @@ This package has these core dependencies:
 7. urllib3
 8. random
 9. json
+10. word2number
 </p>
 
 # Development Roadmap
