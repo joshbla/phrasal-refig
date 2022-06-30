@@ -71,11 +71,11 @@ export class TwitchChatBot {
 
             //! means a command is coming by, and we check if it matches the command we currently support
             if (message.startsWith('!') && message === sillyCommand)
-                this.sayHelloToUser(channel,tags);
+                this.saySillyToUser(channel,tags);
         });
     }
 
-    private sayHelloToUser(channel: any, tags: any) {
+    private saySillyToUser(channel: any, tags: any) {
             this.twitchClient.say(channel,
                 `What's up guys! It's ${ tags.username } here! (RUUEHEHEHEHEHEEHE)
                 I have been arrested for multiple crimes (AHHHHHHHHHHHHH) including: Battery

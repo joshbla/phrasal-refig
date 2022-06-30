@@ -1,11 +1,10 @@
 {
-  "name": "libsbot",
+  "name": "twitch-chatbot",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && node ./dist/app.js",
-    "build": "webpack --config webpack.config.js"
+    "start": "tsc && node ./dist/app.js"
   },
   "dependencies": {
     "axios": "^0.24.0",
@@ -14,7 +13,7 @@
     "tmi.js": "^1.8.5"
   },
   "devDependencies": {
-    "@types/node": "^16.11.41",
+    "@types/node": "^16.11.11",
     "eslint": "^8.4.0",
     "source-map-support": "^0.5.21",
     "typescript": "^4.5.2"

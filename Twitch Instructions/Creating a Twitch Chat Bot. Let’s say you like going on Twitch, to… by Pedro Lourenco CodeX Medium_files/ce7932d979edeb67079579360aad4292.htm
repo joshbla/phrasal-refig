@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html><head><title>Medium</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="twitter:widgets:csp" content="on"><meta name="robots" content="noindex"><!-- base href="https://medium.com/media/ce7932d979edeb67079579360aad4292" --><style>body {text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: "ff-tisa-web-pro", Georgia, Cambria, "Times New Roman", Times, serif; font-weight: 400; color: #333332; font-size: 18px; line-height: 1.4; margin: 0; background-color: white; overflow: hidden;}iframe {max-width: 100%;}</style></head><body data-new-gr-c-s-loaded="8.900.0"><style>.gist .gist-file { margin-bottom: 0 !important; }.gist { text-rendering: auto; }</style><script src="ce7932d979edeb67079579360aad4292_data/ecfd6a04279d0283736398728150ffef.js" charset="utf-8"></script><link rel="stylesheet" href="4ea25ba3d9c962ca22cdab704bdd471a_data/gist-embed-c4fdeba9c558.css"><div id="gist113807077" class="gist">
+    <div class="gist-file" translate="no">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-fetchaccesstoken-ts" class="file my-2">
+    
+    <div itemprop="text" class="Box-body p-0 blob-wrapper data type-typescript  ">
+
+        
+<div class="js-check-bidi js-blob-code-container blob-code-content">
+
+  <template class="js-file-alert-template">
+  <div data-view-component="true" class="flash flash-warn flash-full d-flex flex-items-center">
+  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-alert">
+    <path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path>
+</svg>
+  
+    <span>
+      This file contains bidirectional Unicode text that may be 
+interpreted or compiled differently than what appears below. To review, 
+open the file in an editor that reveals hidden Unicode characters.
+      <a href="https://github.co/hiddenchars" target="_blank">Learn more about bidirectional Unicode characters</a>
+    </span>
+
+
+  <div data-view-component="true" class="flash-action">      <a href="https://medium.com/media/%7B%7B%20revealButtonHref%20%7D%7D" data-view-component="true" class="btn-sm btn">  Show hidden characters
+  
+</a>
+</div>
+</div></template>
+<template class="js-line-alert-template">
+  <span aria-label="This line has hidden Unicode characters" data-view-component="true" class="line-alert tooltipped tooltipped-e">
+    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-alert">
+    <path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path>
+</svg>
+</span></template>
+
+  <table class="highlight tab-size js-file-line-container js-code-nav-container js-tagsearch-file" data-tab-size="8" data-paste-markdown-skip="" data-tagsearch-lang="TypeScript" data-tagsearch-path="fetchAccessToken.ts">
+        <tbody><tr>
+          <td id="file-fetchaccesstoken-ts-L1" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="1"></td>
+          <td id="file-fetchaccesstoken-ts-LC1" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">private</span> <span class="pl-s1">async</span> <span class="pl-en">fetchAccessToken</span><span class="pl-kos">(</span><span class="pl-kos">)</span>: <span class="pl-smi">Promise</span><span class="pl-c1">&lt;</span><span class="pl-smi">TwitchTokenDetails</span><span class="pl-c1">&gt;</span> <span class="pl-kos">{</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L2" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="2"></td>
+          <td id="file-fetchaccesstoken-ts-LC2" class="blob-code blob-code-inner js-file-line">        const <span class="pl-s1">axios</span> <span class="pl-c1">=</span> <span class="pl-en">require</span><span class="pl-kos">(</span><span class="pl-s">'axios'</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L3" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="3"></td>
+          <td id="file-fetchaccesstoken-ts-LC3" class="blob-code blob-code-inner js-file-line">        <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"Fetching Twitch OAuth Token"</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L4" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="4"></td>
+          <td id="file-fetchaccesstoken-ts-LC4" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">return</span> <span class="pl-en">axios</span><span class="pl-kos">(</span><span class="pl-kos">{</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L5" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="5"></td>
+          <td id="file-fetchaccesstoken-ts-LC5" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">method</span>: <span class="pl-s">'post'</span><span class="pl-kos">,</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L6" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="6"></td>
+          <td id="file-fetchaccesstoken-ts-LC6" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">url</span>: <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">config</span><span class="pl-kos">.</span><span class="pl-c1">twitchTokenEndpoint</span><span class="pl-kos">,</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L7" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="7"></td>
+          <td id="file-fetchaccesstoken-ts-LC7" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">params</span>: <span class="pl-kos">{</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L8" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="8"></td>
+          <td id="file-fetchaccesstoken-ts-LC8" class="blob-code blob-code-inner js-file-line">                <span class="pl-c1">client_id</span>: <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">config</span><span class="pl-kos">.</span><span class="pl-c1">twitchClientId</span><span class="pl-kos">,</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L9" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="9"></td>
+          <td id="file-fetchaccesstoken-ts-LC9" class="blob-code blob-code-inner js-file-line">                <span class="pl-c1">client_secret</span>: <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">config</span><span class="pl-kos">.</span><span class="pl-c1">twitchClientSecret</span><span class="pl-kos">,</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L10" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="10"></td>
+          <td id="file-fetchaccesstoken-ts-LC10" class="blob-code blob-code-inner js-file-line">                <span class="pl-c1">code</span>: <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">config</span><span class="pl-kos">.</span><span class="pl-c1">twitchAuthorizationCode</span><span class="pl-kos">,</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L11" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="11"></td>
+          <td id="file-fetchaccesstoken-ts-LC11" class="blob-code blob-code-inner js-file-line">                <span class="pl-c1">grant_type</span>: <span class="pl-s">'authorization_code'</span><span class="pl-kos">,</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L12" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="12"></td>
+          <td id="file-fetchaccesstoken-ts-LC12" class="blob-code blob-code-inner js-file-line">                <span class="pl-c1">redirect_uri</span>: <span class="pl-s">'http://localhost'</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L13" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="13"></td>
+          <td id="file-fetchaccesstoken-ts-LC13" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L14" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="14"></td>
+          <td id="file-fetchaccesstoken-ts-LC14" class="blob-code blob-code-inner js-file-line">            <span class="pl-kos">}</span><span class="pl-kos">,</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L15" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="15"></td>
+          <td id="file-fetchaccesstoken-ts-LC15" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">responseType</span>: <span class="pl-s">'json'</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L16" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="16"></td>
+          <td id="file-fetchaccesstoken-ts-LC16" class="blob-code blob-code-inner js-file-line">        <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">then</span><span class="pl-kos">(</span><span class="pl-k">async</span> <span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-s1">response</span>: <span class="pl-smi">any</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L17" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="17"></td>
+          <td id="file-fetchaccesstoken-ts-LC17" class="blob-code blob-code-inner js-file-line">            <span class="pl-c">// handle success</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L18" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="18"></td>
+          <td id="file-fetchaccesstoken-ts-LC18" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">return</span> <span class="pl-k">await</span> <span class="pl-smi">TwitchTokenResponseValidator</span><span class="pl-kos">.</span><span class="pl-en">parseResponse</span><span class="pl-kos">(</span><span class="pl-s1">response</span><span class="pl-kos">.</span><span class="pl-c1">data</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L19" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="19"></td>
+          <td id="file-fetchaccesstoken-ts-LC19" class="blob-code blob-code-inner js-file-line">        <span class="pl-kos">}</span><span class="pl-kos">)</span><span class="pl-kos">.</span><span class="pl-en">catch</span><span class="pl-kos">(</span><span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-s1">error</span>: <span class="pl-smi">any</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L20" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="20"></td>
+          <td id="file-fetchaccesstoken-ts-LC20" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"Failed to get Twitch OAuth Token"</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L21" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="21"></td>
+          <td id="file-fetchaccesstoken-ts-LC21" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">error</span><span class="pl-kos">.</span><span class="pl-c1">response</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L22" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="22"></td>
+          <td id="file-fetchaccesstoken-ts-LC22" class="blob-code blob-code-inner js-file-line">                <span class="pl-c">// The request was made and the server responded with a status code</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L23" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="23"></td>
+          <td id="file-fetchaccesstoken-ts-LC23" class="blob-code blob-code-inner js-file-line">                <span class="pl-c">// that falls out of the range of 2xx</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L24" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="24"></td>
+          <td id="file-fetchaccesstoken-ts-LC24" class="blob-code blob-code-inner js-file-line">                <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-smi">TwitchResponseError</span><span class="pl-kos">(</span><span class="pl-s1">error</span><span class="pl-kos">.</span><span class="pl-c1">response</span><span class="pl-kos">.</span><span class="pl-c1">data</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L25" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="25"></td>
+          <td id="file-fetchaccesstoken-ts-LC25" class="blob-code blob-code-inner js-file-line">            <span class="pl-kos">}</span> <span class="pl-k">else</span> <span class="pl-k">if</span> <span class="pl-kos">(</span><span class="pl-s1">error</span><span class="pl-kos">.</span><span class="pl-c1">request</span><span class="pl-kos">)</span> <span class="pl-kos">{</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L26" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="26"></td>
+          <td id="file-fetchaccesstoken-ts-LC26" class="blob-code blob-code-inner js-file-line">                <span class="pl-c">// The request was made but no response was received</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L27" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="27"></td>
+          <td id="file-fetchaccesstoken-ts-LC27" class="blob-code blob-code-inner js-file-line">                <span class="pl-c">// `error.request` is an instance of XMLHttpRequest in the browser and an instance of</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L28" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="28"></td>
+          <td id="file-fetchaccesstoken-ts-LC28" class="blob-code blob-code-inner js-file-line">                <span class="pl-c">// http.ClientRequest in node.js</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L29" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="29"></td>
+          <td id="file-fetchaccesstoken-ts-LC29" class="blob-code blob-code-inner js-file-line">                <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-smi">NoTwitchResponseError</span><span class="pl-kos">(</span><span class="pl-s1">error</span><span class="pl-kos">.</span><span class="pl-c1">request</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L30" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="30"></td>
+          <td id="file-fetchaccesstoken-ts-LC30" class="blob-code blob-code-inner js-file-line">            <span class="pl-kos">}</span> <span class="pl-k">else</span> <span class="pl-kos">{</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L31" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="31"></td>
+          <td id="file-fetchaccesstoken-ts-LC31" class="blob-code blob-code-inner js-file-line">                <span class="pl-c">// Something happened in setting up the request that triggered an Error</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L32" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="32"></td>
+          <td id="file-fetchaccesstoken-ts-LC32" class="blob-code blob-code-inner js-file-line">                <span class="pl-k">throw</span> <span class="pl-k">new</span> <span class="pl-smi">MalformedTwitchRequestError</span><span class="pl-kos">(</span><span class="pl-s1">error</span><span class="pl-kos">.</span><span class="pl-c1">request</span><span class="pl-kos">)</span><span class="pl-kos">;</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L33" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="33"></td>
+          <td id="file-fetchaccesstoken-ts-LC33" class="blob-code blob-code-inner js-file-line">            <span class="pl-kos">}</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L34" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="34"></td>
+          <td id="file-fetchaccesstoken-ts-LC34" class="blob-code blob-code-inner js-file-line">        <span class="pl-kos">}</span><span class="pl-kos">)</span></td>
+        </tr>
+        <tr>
+          <td id="file-fetchaccesstoken-ts-L35" class="blob-num js-line-number js-code-nav-line-number js-blob-rnum" data-line-number="35"></td>
+          <td id="file-fetchaccesstoken-ts-LC35" class="blob-code blob-code-inner js-file-line">    <span class="pl-kos">}</span></td>
+        </tr>
+  </tbody></table>
+</div>
+
+
+    </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/PedroEFLourenco/ecfd6a04279d0283736398728150ffef/raw/cdec982e969327abdf7bb7dbb87a8f0ad2d08f9d/fetchAccessToken.ts" style="float:right">view raw</a>
+        <a href="https://gist.github.com/PedroEFLourenco/ecfd6a04279d0283736398728150ffef#file-fetchaccesstoken-ts">
+          fetchAccessToken.ts
+        </a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+<script>var height = -1; var delayMs = 200; if (document) {document.domain = document.domain;}function notifyResize(height) {height = height ? height : document.documentElement.offsetHeight; var resized = false; if (window.donkey && donkey.resize) {donkey.resize(height);var elements = document.getElementsByClassName("gist-data"); for (var i = 0; i < elements.length; i++) {elements[i].style.overflow = "visible"}resized = true;}if (parent && parent._resizeIframe) {var obj = {iframe: window.frameElement, height: height}; parent._resizeIframe(obj); resized = true;}if (window.location && window.location.hash === "#amp=1" && window.parent && window.parent.postMessage) {window.parent.postMessage({sentinel: "amp", type: "embed-size", height: height}, "*");}if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.resize) {window.webkit.messageHandlers.resize.postMessage(height); resized = true;}return resized;}function maybeResize() {try {if (document.documentElement.offsetHeight != height && notifyResize()) {height = document.documentElement.offsetHeight;}delayMs = Math.min(delayMs * 2, 1000000); setTimeout(maybeResize, delayMs);} catch(error) {console.log('maybeResize error: ', error)}}maybeResize();</script><script defer="defer" src="v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon="{&quot;rayId&quot;:&quot;7235a1f47fc827dc&quot;,&quot;token&quot;:&quot;0b5f665943484354a59c39c6833f7078&quot;,&quot;version&quot;:&quot;2022.6.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+</body></html>

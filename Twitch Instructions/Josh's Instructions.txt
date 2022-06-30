@@ -1,0 +1,14 @@
+Every time you edit the Twitch folder, you need to re-create the authorization token in config.json and disconnect libsbot from your account.
+
+Paste your client id into:
+https://id.twitch.tv/oauth2/authorize?client_id=<client_id>&redirect_uri=http://localhost&response_type=code&scope=chat:read chat:edit
+
+Run the page
+
+Copy the data from the resulting page's URL. The code is between "code=" and "&"
+
+My current client id:
+lo0d1rjsprzb1jci8nasq8h4vlyi89
+
+Disconnect libsbot from the bottom of this page:
+https://www.twitch.tv/settings/connections
