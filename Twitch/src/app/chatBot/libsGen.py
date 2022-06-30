@@ -6,8 +6,6 @@ import random
 import spacy
 import re
 
-
-print("Enter paragraph:")
 input = (input()).lstrip()
 #might remove regex section entirely as
 #   it interferes with multi-word dashed numbers
@@ -86,8 +84,6 @@ k = 0
 while k < len(doc):
     docString = docString + (doc[k]).text + " "
     k += 1
-print("doc: ", len(doc), ", \"", docString, "\"") 
-print("madElements: ", len(madElements), ", \"", ' '.join(madElements), "\"")
 
 output = ""
 l = 0
