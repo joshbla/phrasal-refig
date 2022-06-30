@@ -85,6 +85,16 @@ export class TwitchChatBot {
              );
     }
 
+    private saylibToUser(channel: any, tags: any) {
+        this.twitchClient.say(channel,
+            `What's up guys! It's ${ tags.username } here! (RUUEHEHEHEHEHEEHE)
+            I have been arrested for multiple crimes (AHHHHHHHHHHHHH) including: Battery
+            on a police officer (WHAT), Grand theft, Declaring war on Italy, and public
+            indecency (RUHEHEHEEHEHEHEHEHEHEHE X2 speed). I will be escaping prison on,
+            MARCH 28TH! After that.... I WILL TAKE OVER THE WORLD!`
+         );
+}
+
     private buildConnectionConfig(channel: string, username: string, accessToken: string) {
         return {
             options: { debug: true },
