@@ -1,0 +1,25 @@
+import string
+import random
+import re
+
+madLib0 = "10 WAYS TO (verb) YOUR (noun). (group) HATE HIM, FIND OUT WHY!"
+madLib1 = "“Let’s build a snowman,” said (noun). First we need to have a (adverb) snowstorm. As we watched the snow fall (adverb) from the sky it made me so hungry that I could eat (noun). Once there was enough snow, we went outside to build the (adverb) snowman ever. We grabbed our (item of clothing) that was (adverb) and (adverb). We began rolling the snow (adverb) until we couldn’t lift it anymore. We did this again and again until there were (number) (adjective) on top of each other. We (verb) to find (noun) in the road, but could only find (noun). The eyes were made of (noun), the nose was a (adjective) (adjective) noun. Mom gave us her old (noun) to use for the top of his head. We stepped back and said this is the (adjective) snowman we have ever made and we called him (noun)."
+madLib2 = "Every (month) (number) we always have a picnic at (place). We invite (noun) and (noun). It is next to a very (adjective) lake. We have to walk (adverb) to get there without (Verb). There are (animal) and (animal) which are very (adjective). We eat lots of food that everyone (adjective). The games are my favorite part. We play (verb-ing) and (verb-ing) until we can’t walk anymore. Then we (verb) back and relax under the old shade tree until (noun) says, “Happy Birthday!”"
+madLib3 = "(noun) said we were going to go eat pizza at (place). (noun) knows that I don’t like that place because of Chef (name). So I decided I was going to make the most complicated pizza this time to make him make a mistake. I told him to take a lump of (noun) and make it as thin as he possibly could. I told him to make it in the shape of (noun). Then put some (adjective) (noun) on the pizza to cover it completely. Then add some (adjective) sauce (adverb) and come cheese (adverb). Don’t forget the (name of a food)! When it is time to bake it I remind the Chef to put it in the hot (noun) and to cut it into (number) pieces. When the Chef brought out my pizza it looked (adjective) and I loved it! I would eat this pizza (number) a month now!"
+madLib4 = "On the (adjective) road to (place), my (adjective) family and I decided to invent a new game to help us pass the time. Since this would be a rather long trip (number) hours we knew we needed to come up with something with (plural noun) and (plural noun). Using the knowledge we learned from (noun) to (verb) we tried to get all the way to (noun, place) without (verb), but it didn’t work too well because (noun) kept (verb-ing) at us to go away! After a few failed attempts we thought we could really use some (plural noun) so we turned down the (adverb) road and started (verb-ing) at the top of our lungs to (noun) who finally stopped the (noun). Before I knew it I woke up and looked around me only to see (plural noun) and (plural noun) all around me, but no (noun). I scratched my head (adjective) and wondered where on earth my (noun) was. I was grateful we only had (number) hours left until we arrived at (place)."
+madLib5 = "One (adjective) night, no stars were in the (color) night. It was only (number) days until Halloween Night. Thunder roared (adverb) and the (color) lightning flashed through the trees. We heard the sound of (plural nouns) and (plural nouns) in the distance. It was finally Halloween night and it was (adjective) and (adjective). I was dressed up as a (noun). My (adjective) bag was filled with (adjective) (food) overflowing. I couldn’t wait to eat the (noun) hidden at the bottom of the bag. I wanted to go to (number) more (adjective) houses before making the trip home. As I (verb) up the driveway to (adverb) say Trick or Treat I wondered just what I would get. I rang the doorbell and (plural nouns) (verb) out from behind the (noun) I screamed (adverb) and scared the (adjective) (noun) standing at the door. I dropped all my (noun) out of my bag and (verb) home as fast as I could."
+madLib6 = "It is my favorite time of the year. The (adjective) nights and the (color) Christmas lights are some of my favorite things! But my most favorite thing is baking cookies with (noun). It has been a tradition for (number) years. I love to help (verb) the (ingredient) into the (adjective) mixing bowl (adverb). This year (noun) is letting me make (cookie) all by myself. All I have to do is mix (noun), (noun), and (noun) to make the most (adjective) cookies that you have ever tasted! We then take them to (place) for (plural noun) to enjoy. It really is my favorite thing to do."
+madList = [madLib0, madLib1, madLib2, madLib3, madLib4, madLib5, madLib6]
+madLib = random.choice(madList)
+#search string for () and make list of what is between the characters
+regex = '\([^)]*\)'
+match = re.findall(regex, madLib)
+
+#iterate the list and replace each with user input
+inputList = []
+for x in match:
+    print("Enter a " + x[1:-1] + ":")
+    inputList.append(input())
+for x in range(len(match)):
+    madLib = madLib.replace(match[x], inputList[x])
+print(madLib)

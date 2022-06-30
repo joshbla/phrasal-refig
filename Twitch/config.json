@@ -1,0 +1,10 @@
+{
+    "twitch": {
+        "token_endpoint": "https://id.twitch.tv/oauth2/token",
+        "username": "libsbot",
+        "client_id":"lo0d1rjsprzb1jci8nasq8h4vlyi89",
+        "client_secret":"if2yzzefpxxq79z3lk18ff2ew1g484",
+        "authorization_code":"gmvqk60fl00homea3118rjg6t4en5r",
+        "channel": "libsbot     "
+    }
+}

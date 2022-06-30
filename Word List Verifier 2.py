@@ -16,3 +16,5 @@ for word in words:
 
 print(dict)
 print("End")
+
+# {'indefinite article': 'a', 'abbreviation': 'acct', 'noun': 'acropolis', 'exclamation': 'achoo', None: 'aclu', 'adverb': 'acrobatically', 'verb': 'acquit', 'adjective': 'acrobatic', 'adverb, preposition': 'aboard', 'preposition': 'above', 'suffix': 'acy'}
