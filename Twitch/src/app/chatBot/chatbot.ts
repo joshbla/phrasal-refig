@@ -62,14 +62,14 @@ export class TwitchChatBot {
     }
 
     refreshTokenIfNeeded() {
-        //TODO if needed - twitch apparently only requires the token on login so it is good enough for now to just get a token on start-up.
+        // TODO if needed - twitch apparently only requires the token on login so it is good enough for now to just get a token on start-up.
     }
 
     private setupBotBehavior() {
         this.twitchClient.on('message', (channel: any, tags: any, message: any, self: any) => {
             let sillyCommand = "!silly"
 
-            //! means a command is coming by, and we check if it matches the command we currently support
+            // ! means a command is coming by, and we check if it matches the command we currently support
             if (message.startsWith('!') && message === sillyCommand)
                 this.saySillyToUser(channel,tags);
         });
@@ -87,11 +87,8 @@ export class TwitchChatBot {
 
     private saylibToUser(channel: any, tags: any) {
         this.twitchClient.say(channel,
-            `What's up guys! It's ${ tags.username } here! (RUUEHEHEHEHEHEEHE)
-            I have been arrested for multiple crimes (AHHHHHHHHHHHHH) including: Battery
-            on a police officer (WHAT), Grand theft, Declaring war on Italy, and public
-            indecency (RUHEHEHEEHEHEHEHEHEHEHE X2 speed). I will be escaping prison on,
-            MARCH 28TH! After that.... I WILL TAKE OVER THE WORLD!`
+            // Need to call libGen.py here
+            // Must modify libGen.py for input and return parameters
          );
 }
 

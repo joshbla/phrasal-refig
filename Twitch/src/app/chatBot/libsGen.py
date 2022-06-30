@@ -5,10 +5,12 @@ from word2number import w2n
 import random
 import spacy
 import re
+import sys
 
-input = (input()).lstrip()
-#might remove regex section entirely as
-#   it interferes with multi-word dashed numbers
+input = (sys.argv[1]).lstrip()
+
+# Might remove regex section entirely as
+#   It interferes with multi-word dashed numbers
 #   It should now be unnecessary
 
 #requires regex to split punctuation from words
