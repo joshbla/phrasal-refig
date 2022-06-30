@@ -1,0 +1,4 @@
+Edit the code in src.
+
+Run the command: npm start
+This will connect to the channel and it will compile your src (replacing your dist file).
