@@ -2,6 +2,7 @@ import { ChatBotConfig } from './../config/config.model';
 import { TwitchTokenDetails } from './../models/twitchTokenDetails.models';
 import { TwitchTokenResponseValidator } from './../utils/TwitchTokenResponseValidator';
 import { MalformedTwitchRequestError, NoTwitchResponseError, TwitchResponseError } from '../models/error.model';
+import * as $ from 'jquery';
 
 
 export class TwitchChatBot {
@@ -72,6 +73,10 @@ export class TwitchChatBot {
             // ! means a command is coming by, and we check if it matches the command we currently support
             if (message.startsWith('!') && message === sillyCommand)
                 this.saySillyToUser(channel,tags);
+            
+            
+            if (Math.floor(Math.random() * 4) === 0)
+                this.saylibToUser(message,channel,tags);
         });
     }
 
@@ -85,12 +90,27 @@ export class TwitchChatBot {
              );
     }
 
-    private saylibToUser(channel: any, tags: any) {
+    private saylibToUser(message: any,channel: any, tags: any) {
         this.twitchClient.say(channel,
+            this.postData(message)
             // Need to call libGen.py here
             // Must modify libGen.py for input and return parameters
          );
-}
+    }
+
+    public callbackFunc(response) {
+        // do something with the response
+        console.log(response);
+    }
+
+    public postData(message) {
+        $.ajax({
+            type: "POST",
+            url: "/libsGen.py",
+            data: { param: message },
+            success: this.callbackFunc
+        });
+    }
 
     private buildConnectionConfig(channel: string, username: string, accessToken: string) {
         return {
