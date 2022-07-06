@@ -98,6 +98,7 @@ export class TwitchChatBot {
          );
     }
 
+    //now it's just printing to the console but I want it to return the value to postData
     public callbackFunc(response) {
         // do something with the response
         console.log(response);
