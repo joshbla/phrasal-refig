@@ -1,5 +1,8 @@
 # Ideas: could use ent in spacy to better replace proper nouns
-# Issues: Punctuation spacing
+# Issues:
+# Punctuation spacing
+# argv may not work yet but it's close
+
 from gingerit.gingerit import GingerIt
 from word2number import w2n
 import random
