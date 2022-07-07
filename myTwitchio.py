@@ -5,7 +5,7 @@ class Bot(commands.Bot):
 
     def __init__(self):
         # Initialise our Bot with our access token, prefix and a list of channels to join on boot...
-        super().__init__(token='el2f20ocj68ggt0spwvugjpjwbpyfl', prefix='!', initial_channels=['doctorfoxmeat'])
+        super().__init__(token='el2f20ocj68ggt0spwvugjpjwbpyfl', prefix='!', initial_channels=['Aliasbot'])
 
     async def event_ready(self):
         # We are logged in and ready to chat and use commands...
