@@ -19,7 +19,7 @@ class Bot(commands.Bot):
         # For now we just want to ignore them...
         if message.echo:
             return
-        elif random.randint(0,5) == 0:
+        elif random.randint(0,3) == 0:
             reply = "@" + message.author.name + " test successful"
             await twitchio.Channel.send(message.channel, reply)
         else:

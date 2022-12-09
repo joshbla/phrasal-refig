@@ -7,7 +7,7 @@ import re
 import spacy
 nlp = spacy.load("en_core_web_sm")
 
-class Main:
+class phrasal_refig:
     
     def __init__(self):
         pass
@@ -33,6 +33,9 @@ class Main:
         madElements = []
         i = 0
         j = random.randint(0, 4)
+        if len(doc) < j:
+            j = 0
+
         while i < len(doc):
             if i == j:
                 if (doc[i]).pos_ in posTags:
@@ -76,8 +79,8 @@ class Main:
         while k < len(doc):
             docString = docString + (doc[k]).text + " "
             k += 1
-        print("doc: ", len(doc), ", \"", docString, "\"") 
-        print("madElements: ", len(madElements), ", \"", ' '.join(madElements), "\"")
+        #print("doc: ", len(doc), ", \"", docString, "\"") 
+        #print("madElements: ", len(madElements), ", \"", ' '.join(madElements), "\"")
 
         output = ""
         l = 0
@@ -116,8 +119,10 @@ class Bot(commands.Bot):
         # For now we just want to ignore them...
         if message.echo:
             return
-        elif random.randint(0,5) == 0:
-            reply = "@" + message.author.name + Main.libsGen(message.content)
+        elif random.randint(0,0) == 0:
+            output = phrasal_refig.libsGen(message.content)
+            print(output)
+            reply = "@" + message.author.name + " " + output
             await twitchio.Channel.send(message.channel, reply)
         else:
             return
@@ -129,10 +134,6 @@ class Bot(commands.Bot):
     @commands.command()
     async def sex(self, ctx: commands.Context):
         await ctx.send(f'Congratulations {ctx.author.name}, you\'re pregnant!')
-    
-    @commands.command()
-    async def gay(self, ctx: commands.Context):
-        await ctx.send(f'Congratulations {ctx.author.name}, you\'re gay!')
 
     @commands.command()
     async def die(self, ctx: commands.Context):
