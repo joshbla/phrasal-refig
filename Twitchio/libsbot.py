@@ -103,6 +103,11 @@ class phrasal_refig:
         except ValueError:  # includes simplejson.decoder.JSONDecodeError
             return 'Decoding JSON has failed'
 
+    def scramble(input):
+        input = list(input)
+        random.shuffle(input)
+        return ''.join(input)
+
 class Bot(commands.Bot):
 
     def __init__(self):
@@ -117,10 +122,16 @@ class Bot(commands.Bot):
     async def event_message(self, message):
         # Messages with echo set to True are messages sent by the bot...
         # For now we just want to ignore them...
+        
         if message.echo:
             return
-        elif random.randint(0,0) == 0:
+        elif random.randint(0,2) == 0:
             output = phrasal_refig.libsGen(message.content)
+            print(output)
+            reply = "@" + message.author.name + " " + output
+            await twitchio.Channel.send(message.channel, reply)
+        elif random.randint(0,2) == 0:
+            output = phrasal_refig.scramble(message.content)
             print(output)
             reply = "@" + message.author.name + " " + output
             await twitchio.Channel.send(message.channel, reply)
